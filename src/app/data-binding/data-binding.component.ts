@@ -9,6 +9,12 @@ export class DataBindingComponent {
   url: string = 'http://loiane.com';
   urlImagem: string = 'http://lorempixel.com.br/500/400/?2';
   cursoAngular: boolean = true;
+  nome: string = 'abc';
+
+  pessoa: any = {
+    nome: 'Teste',
+    idade: 20
+  }
 
   getValor() {
     return 1;
