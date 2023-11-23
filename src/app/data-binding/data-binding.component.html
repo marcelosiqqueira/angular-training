@@ -14,7 +14,7 @@
 
 </section> -->
 
-<app-meu-form></app-meu-form>
+<!-- <app-meu-form></app-meu-form> -->
 
 <section class="input_output-properties">
   <article>
@@ -22,6 +22,10 @@
       Input/Output Properties
 
       <app-curso [nome]="nomeDoCurso"></app-curso>
+      <contador
+        [valor]="valorInicial"
+        (mudouValor)="onMudouValor($event)"
+      ></contador>
     </h3>
   </article>
 </section>

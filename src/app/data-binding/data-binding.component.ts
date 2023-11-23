@@ -18,11 +18,17 @@ export class DataBindingComponent {
 
   nomeDoCurso: string = 'Angular';
 
+  valorInicial = 15;
+
   getValor() {
     return 1;
   }
 
   getCurtirCurso() {
     return true;
+  }
+
+  onMudouValor(evento: any) {
+    console.log(evento.novoValor);
   }
 }
